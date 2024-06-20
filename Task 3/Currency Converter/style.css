@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #9873fe;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-logo {
+  width: 40px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.app-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-icon {
+  width: 50px;
+  height: auto;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #02002c;
+}
+
+.slider {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #02002c;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #02002c;
+  color: #7a789d;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  color: #9873fe;
+  border-color: #9873fe;
+}
+
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; 
+  margin-bottom: 20px;
+}
+
+select {
+  width: calc(50% - 5px); 
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #9873fe;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+select:hover {
+  background-color: #775fea;
+}
+
+select:focus {
+  outline: none;
+}
+
+select option {
+  background-color: #ffffff;
+  color: #02002c;
+}
+
+button {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  background-color: #9873fe;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #775fea;
+}
+
+#result {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e5dbff;
+  border-radius: 4px;
+}

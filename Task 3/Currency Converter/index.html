@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <img src="house.png" class="home-logo" alt="Home Logo" />
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Converter</a></li>
+        <li><a href="#">Rates</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <div class="app-details">
+      <img src="app-icon.svg" class="app-icon" alt="App Icon" />
+      <h1 class="app-title">Currency Converter</h1>
+    </div>
+    <div class="slider">
+      <input type="range" id="amount-slider" min="1" max="1000" value="100" />
+    </div>
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" value="100" />
+    <div class="dropdowns">
+      <select id="from-currency-select"></select>
+      <select id="to-currency-select"></select>
+    </div>
+    <button id="convert-button">Convert</button>
+    <p id="result"></p>
+  </div>
+  <script src="currency-codes.js"></script>
+  <script src="api-key.js"></script>
+  <script src="index.js"></script>
+  <script>
+    // Sync slider with amount input
+    const amountSlider = document.getElementById('amount-slider');
+    const amountInput = document.getElementById('amount');
+
+    amountSlider.addEventListener('input', () => {
+      amountInput.value = amountSlider.value;
+    });
+
+    amountInput.addEventListener('input', () => {
+      amountSlider.value = amountInput.value;
+    });
+  </script>
+</body>
+</html>
